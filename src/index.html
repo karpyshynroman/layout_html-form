@@ -9,7 +9,7 @@
     <title>Layout Forms</title>
   </head>
   <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
+  <form method="get" autocomplete="off" action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
     <fieldset class="field-form">
       <legend>Personal information</legend>
       <div class="input-form">
@@ -63,8 +63,10 @@
       <div class="input-form">
         <label>
           Do you love cats?
-          <input type="radio" name="yes"> Yes
-          <input type="radio" name="no"> No
+          <input type="radio" name="cat" value="yes" id="answeryes">
+          <label for="answeryes">Yes</label>
+          <input type="radio" name="cat" value="no" id="answerno">
+          <label for="answerno">No</label>
         </label>
       </div>
       <div class="input-form">
